@@ -1,0 +1,50 @@
+<div class="container">
+  <h1 class="text-center">Crea un Evento</h1>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-10 p-4  rounded shadow-lg m-3 ">
+      <form>
+        <div class="mb-3">
+          <label for="nombreEvento" class="form-label">Nombre del Evento</label>
+          <input type="text" class="form-control" id="nombreEvento" name="nombreEvento" required [(ngModel)]="nombre">
+        </div>
+
+        <div class="mb-3">
+          <label for="hora" class="form-label">Fecha del Evento</label>
+          <input type="datetime-local" class="form-control" id="hora" name="hora" required [(ngModel)]="fecha"
+            (change)="actualizarFechaHora()">
+        </div>
+
+        <div class="mb-3">
+          <label for="pais" class="form-label">País</label>
+          <input type="text" class="form-control" id="pais" name="pais" required [(ngModel)]="pais">
+        </div>
+
+        <div class="mb-3">
+          <label for="ciudad" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="ciudad" name="ciudad" required [(ngModel)]="ciudad">
+        </div>
+
+        <div class="mb-3">
+          <label for="direccion" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="direccion" name="direccion" required [(ngModel)]="direccion">
+        </div>
+
+        <div class="mb-3">
+          <label for="foto" class="form-label">Foto</label>
+          <input type="file" class="form-control" id="foto" name="foto" [(ngModel)]="foto">
+        </div>
+
+        <div class="mb-3">
+          <label for="descripcionEvento" class="form-label">Descripción del Evento</label>
+          <textarea class="form-control" id="descripcionEvento" name="descripcionEvento" rows="3" required
+            [(ngModel)]="descripcion"></textarea>
+        </div>
+
+        <div class="mb-3 text-center">
+          <button (click)="crearEvento()" type="submit" class="btn btn-primary">Crear Evento</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

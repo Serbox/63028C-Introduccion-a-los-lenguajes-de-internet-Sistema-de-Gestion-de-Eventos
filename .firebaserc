@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gestion-eventos-f696f": {
+      "hosting": {
+        "gestion-eventos-project": [
+          "gestion-eventos-f696f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "gestion-eventos-f696f"
+  }
+}

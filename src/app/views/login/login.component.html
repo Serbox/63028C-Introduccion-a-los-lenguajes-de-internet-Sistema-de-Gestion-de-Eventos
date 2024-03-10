@@ -1,0 +1,47 @@
+<div class="container d-flex align-items-center justify-content-center min-vh-100 ">
+  <div class="card shadow-lg p-5 m-3 ">
+    <div class="card-body">
+
+      <h3 class="text-center mb-2 ">Inicia sesión con</h3>
+
+      <div class="row mb-4">
+        <div class="col-md-6 mb-2">
+          <button (click)="loginGoogle()" type="button" class="btn btn-lg btn-outline-dark  w-100"><i
+              class="bi bi-google"></i>Google</button>
+        </div>
+        <div class="col-md-6  mb-2">
+          <button (click)="loginGitHub()" type="button" class="btn btn-lg btn-outline-dark  w-100"><i class="bi bi-github"></i>GitHub</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <form>
+        <h5 class="text-center ">O continúa con</h5>
+        <div class="mb-3">
+          <label for="email" class="form-label fs-6 fw-bold ">Email</label>
+          <input type="email" class="form-control form-control-lg" id="email" aria-describedby="emailHelp"
+            [(ngModel)]="mail" name="mail">
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <label for="password" class="form-label fs-6 fw-bold ">Contraseña</label>
+          </div>
+          <input type="password" class="form-control form-control-lg" id="password" [(ngModel)]="pass" name="pass">
+          <a href="#" class="font-weight-bold text-decoration-none text-indigo-600 fs-5">Contaseña olvidada?</a>
+
+        </div>
+
+        <div class="mb-3 text-center">
+          <button (click)="login()" type="submit" class="btn btn-primary btn-md col-12 ">Iniciar sesión</button>
+        </div>
+      </form>
+
+    </div>
+
+    <p class="text-center text-secondary fs-5">
+      No estas registrado? <a href="#" class="font-weight-bold text-indigo-600">Registrarse</a>
+    </p>
+  </div>
+</div>
