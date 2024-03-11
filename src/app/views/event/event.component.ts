@@ -7,6 +7,9 @@ import { provideNativeDateAdapter } from '@angular/material/core';
 import { IEvent, Ilocacion } from '../../interfaces/event.interface';
 import { AuthService } from '../../services/auth/auth.service';
 import { EventService } from '../../services/event/event.services';
+import { MatDialog} from '@angular/material/dialog';
+import { PopUpComponent } from './pop-up/pop-up.component';
+
 
 
 
@@ -16,7 +19,7 @@ import { EventService } from '../../services/event/event.services';
   providers: [provideNativeDateAdapter(), EventService],
   imports: [FormsModule, MatFormFieldModule, MatInputModule, MatDatepickerModule],
   templateUrl: './event.component.html',
-  styleUrl: './event.component.scss'
+  styleUrl: './event.component.scss',
 })
 export class EventComponent {
 
@@ -36,9 +39,18 @@ export class EventComponent {
   fechaSeparada: string
   horaSeparada: string
 
+  constructor(private dialogRef : MatDialog){}
+  openDialog(){
+    
+    this.dialogRef.open(PopUpComponent)}
+
   actualizarFechaHora() {
     if (this.fecha) {
       const fechaHora = new Date(this.fecha);
+      const fechaActual = new Date()
+      if(fechaHora > fechaActual){
+        
+      }
       this.fechaSeparada = fechaHora.toISOString().split('T')[0]; // Obtiene la fecha
       this.horaSeparada = fechaHora.toTimeString().split(' ')[0]; // Obtiene la hora
     }
@@ -67,16 +79,7 @@ export class EventComponent {
     }
 
     this.eventService.guardarEvento(evento)
+
+
   }
-
-
-
-
-
-
-
-
-
-
-
-}
+  }

@@ -3,7 +3,58 @@
 div {
   font-family: 'Concert One', sans-serif;
 }
+body{
+  font-family: 'Concert One', sans-seriff;
 
-mat-form-field {
-  margin-right: 12px;
 }
+
+header{
+  display: flex;
+  height: 90px;
+  background-color: rgb(77, 77, 75);
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  }
+  
+  .logo img{
+    height: 50px;
+  }
+nav a{
+ font-weight: 600;
+ padding-right: 10px;
+}
+.footerNav{
+  margin:30PX 8;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+}
+.footerNav ul li a{
+  color: rgb(255, 255, 255);
+  margin: 40px;
+  text-decoration: none;
+  font-size: 1.30em;
+  opacity: 8;
+  transition: 0,5s;
+}
+footerNav ul li a:hover{
+  opacity: 3;
+}
+
+.headerBottom{
+  background-color: rgb(90, 177, 10);
+  padding: 20px;
+}
+.footerBottom{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+footerBottom{
+  color: white;
+}
+
