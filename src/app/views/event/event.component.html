@@ -1,3 +1,29 @@
+
+<header>
+  <a href="/" class="logo">
+    <img src="logo.png" alt="poner logo">
+    <h2 class="no"> pendiente
+    </h2>
+  </a>
+    <div class = "footerNav">
+      <ul>
+         <li><a href="/home" class="nav-link">Home</a></li>
+          <li><a href="" class="nav-link">Eventos</a></li>
+          <li><a href="" class="nav-link">Sobre nosotros</a></li>
+          
+      </ul>
+    </div>
+    <div class = "headerBottom">
+      <li><a href="/login" class="nav-link">Login</a></li>
+
+    </div>
+</header>
+<div class = "footerBottom">
+  <p>Copy rigth &copy;2024; Designed by <span class="designer">SEJ</span></p>
+
+</div>
+
+
 <div class="container">
   <h1 class="text-center">Crea un Evento</h1>
 
@@ -42,9 +68,12 @@
         </div>
 
         <div class="mb-3 text-center">
-          <button (click)="crearEvento()" type="submit" class="btn btn-primary">Crear Evento</button>
+          <button (click)="crearEvento(); openDialog()" type="submit" class="btn btn-primary">Crear Evento</button>
         </div>
       </form>
     </div>
   </div>
 </div>
+<footer>
+
+</footer>
