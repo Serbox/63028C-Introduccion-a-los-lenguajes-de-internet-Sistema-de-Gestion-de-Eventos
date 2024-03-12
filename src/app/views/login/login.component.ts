@@ -17,6 +17,11 @@ export class LoginComponent {
   router = inject(Router)
   mail: string = "";
   pass: string = "";
+  isLoggedIn: boolean;
+
+  getIsLoggedIn() {
+    return this.isLoggedIn;
+  }
 
   async login() {
 
@@ -34,6 +39,7 @@ export class LoginComponent {
     const response = await this.authService.loginWihtGoogle()
 
     if (response == true) {
+      this.isLoggedIn=true;
       this.router.navigateByUrl("events")
     }
   }
@@ -43,6 +49,7 @@ export class LoginComponent {
     const response = await this.authService.loginWihtGitHub()
 
     if (response == true) {
+      this.isLoggedIn=true;
       this.router.navigateByUrl("events")
     }
   }

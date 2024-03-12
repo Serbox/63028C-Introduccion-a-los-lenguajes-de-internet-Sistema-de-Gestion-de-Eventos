@@ -9,6 +9,8 @@ import { AuthService } from '../../services/auth/auth.service';
 import { EventService } from '../../services/event/event.services';
 import { MatDialog} from '@angular/material/dialog';
 import { PopUpComponent } from './pop-up/pop-up.component';
+import { LoginComponent} from '../login/login.component';
+import { NgIf } from '@angular/common';
 
 
 
@@ -79,7 +81,19 @@ export class EventComponent {
     }
 
     this.eventService.guardarEvento(evento)
-
+    
 
   }
+  
+  
+  
+  // Método para simular el inicio de sesión
+   loginComponent = new LoginComponent();
+   isLoggedIn = this.loginComponent.getIsLoggedIn();
+
+  if (isLoggedIn = true) {
+  // El usuario ha iniciado sesión
   }
+
+
+}

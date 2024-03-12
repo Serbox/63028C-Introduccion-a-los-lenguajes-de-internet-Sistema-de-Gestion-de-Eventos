@@ -1,0 +1,64 @@
+.header{
+    display: flex;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .loginbtn{
+    font-size:15px;
+    font-family:Arial;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#fff;
+    border-color:rgba(24, 27, 25, 1);
+    font-weight:bold;
+    border-top-left-radius:28px;
+    border-top-right-radius:28px;
+    border-bottom-left-radius:28px;
+    border-bottom-right-radius:28px;
+    text-shadow: 1px 1px 0px rgba(31, 37, 28, 1);
+    background:rgba(39, 59, 44, 1);
+    
+  }
+      .loginbtn:hover{
+        color: rgb(209, 199, 60);
+        background: rgba(103, 105, 102, 1)
+        
+      }
+      
+  .logo{
+    color: black;
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    borde
+  .imagen{
+    display: flex;
+    align-content: center;
+    border-block: 10px;
+  }
+  
+    }
+    .menu{
+      font-size: 20px;
+      display: flex;
+      text-align: center;
+      transition: 0,5s;
+    }
+    menu a:hover{
+      color: rgb(209, 199, 60);
+  
+    }
+    
+  
+    .logo img{
+      display: flex;
+      height: 80px;
+      
+    }
+  nav a{
+   font-weight: 600;
+   padding-right: 10px;
+  }
