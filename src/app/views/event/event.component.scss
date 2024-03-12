@@ -3,58 +3,103 @@
 div {
   font-family: 'Concert One', sans-serif;
 }
-body{
-  font-family: 'Concert One', sans-seriff;
 
-}
-
-header{
+.header{
   display: flex;
   height: 90px;
-  background-color: rgb(77, 77, 75);
+  background-color: rgb(255, 255, 255);
   justify-content: space-between;
   align-items: center;
 }
+.loginbtn{
+  font-size: 22px;
+  color: white  ;
+  border: 2px solid rgb(23, 21, 21);
+  background-color: black;
+    padding: 10px 10px;
+    align-items: center;
+    margin-right: 10px;
+    transition: 0,7s;
+}
+    .loginbtn:hover{
+      background-color: rgb(65, 65, 70);
+    }
+
 .logo{
+  color: black;
   display: flex;
+  align-items:center;
+  text-decoration: none;
+.imagen{
+  display: flex;
+  align-content: center;
+  border-block: 10px;
+}
+
   }
-  
+  .menu{
+    font-size: 20px;
+    display: flex;
+  justify-items: center;
+  margin-right: 100px;
+  }
+  .menu a{
+    align-items: center;
+  }
+
   .logo img{
-    height: 50px;
+    display: flex;
+    height: 80px;
+    margin-right: 30px;
   }
 nav a{
  font-weight: 600;
  padding-right: 10px;
 }
+//footer css////////////////////////////
+
+ .footercontainer{
+  width: 100%;
+  padding: 70px 30x 20px;
+  
+ }
+
 .footerNav{
   margin:30PX 8;
+  background-color: black;
 }
 .footerNav ul{
   display: flex;
   justify-content: center;
 }
 .footerNav ul li a{
-  color: rgb(255, 255, 255);
-  margin: 40px;
+  color: rgb(255, 248, 248);
+  margin: 20px;
   text-decoration: none;
-  font-size: 1.30em;
-  opacity: 8;
-  transition: 0,5s;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
 }
-footerNav ul li a:hover{
-  opacity: 3;
+.footerNav ul li a:hover{
+  opacity: 1;
 }
 
-.headerBottom{
-  background-color: rgb(90, 177, 10);
-  padding: 20px;
-}
 .footerBottom{
   background-color: black;
+  color: white;
   padding: 20px;
   text-align: center;
 }
-footerBottom{
-  color: white;
+.foot{
+  background-color: black;
 }
-
+.designer{
+  opacity: 0.7;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 400;
+margin: 0px 5px;
+}
+.designer:hover{
+  opacity: 1;
+}
