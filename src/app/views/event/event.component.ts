@@ -11,17 +11,20 @@ import { MatDialog} from '@angular/material/dialog';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import { LoginComponent} from '../login/login.component';
 import { NgIf } from '@angular/common';
+import { HeaderComponent } from "../header/header.component";
+
 
 
 
 
 @Component({
-  selector: 'app-event',
-  standalone: true,
-  providers: [provideNativeDateAdapter(), EventService],
-  imports: [FormsModule, MatFormFieldModule, MatInputModule, MatDatepickerModule],
-  templateUrl: './event.component.html',
-  styleUrl: './event.component.scss',
+    selector: 'app-event',
+    standalone: true,
+    providers: [provideNativeDateAdapter(), EventService],
+    templateUrl: './event.component.html',
+    styleUrl: './event.component.scss',
+    imports: [FormsModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, HeaderComponent]
+    
 })
 export class EventComponent {
 

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HeaderComponent } from './header.component';
+import { LoginComponent} from '../login/login.component';
+import { NgIf } from '@angular/common';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
