@@ -86,6 +86,7 @@ export class AuthService {
   signOut() {
     getAuth().signOut();
     localStorage.removeItem('user');
+    return true;
     //this.routerlink('/auth');
   }
 

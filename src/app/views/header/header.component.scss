@@ -28,6 +28,26 @@
         
       }
       
+      .closebtn{
+        font-size:15px;
+        font-family:Arial;
+        width:140px;
+        height:50px;
+        border-width:1px;
+        color:#fff;
+        border-color:rgb(153, 0, 0);
+        font-weight:bold;
+        border-top-left-radius:28px;
+        border-top-right-radius:28px;
+        border-bottom-left-radius:28px;
+        border-bottom-right-radius:28px;
+        text-shadow: 1px 1px 0px rgba(31, 37, 28, 1);
+        background:rgb(158, 9, 4);
+      }
+      .closebtn:hover{
+        color: rgb(209, 199, 60);
+        background: rgba(103, 105, 102, 1)
+      }
   .logo{
     color: black;
     display: flex;

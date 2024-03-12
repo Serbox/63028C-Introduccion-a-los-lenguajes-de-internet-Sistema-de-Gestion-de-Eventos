@@ -1,3 +1,4 @@
+
 <div class="header">
     <a href="#" class="logo">
       <div class="imagen">
@@ -6,9 +7,17 @@
         <h2 class ="SEJ EVENTOS">SEJ EVENTOS</h2>
     </a>
       <NAV class="menu">
-        <a href="/home" class="nav-link">Home</a><a href="" class="nav-link">Eventos</a><a href="" class="nav-link">Sobro Nosotros</a>
+        <a href="" class="nav-link">Home</a><a href="/events" class="nav-link">Eventos</a><a href="" class="nav-link">Sobro Nosotros</a>
       </NAV>
-      <button class="loginbtn" *ngIf="isLoggedIn">
+      <div>
+      <button class="loginbtn" [hidden]="isLoggedIn">
         <a href="/login" class="nav-link">Login</a>
       </button>
+      <button class="closebtn" *[hidden]="isLoggedOut">
+        <a href="/login" class="nav-link">Salir</a>
+      </button>
+    </div>
+    
   </div>
+
+

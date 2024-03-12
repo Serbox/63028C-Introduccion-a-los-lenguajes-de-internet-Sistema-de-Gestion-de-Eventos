@@ -10,8 +10,10 @@ import { EventService } from '../../services/event/event.services';
 import { MatDialog} from '@angular/material/dialog';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import { LoginComponent} from '../login/login.component';
-import { NgIf } from '@angular/common';
 import { HeaderComponent } from "../header/header.component";
+import { FooterComponent } from '../footer/footer.component';
+import Swal from 'sweetalert2';
+
 
 
 
@@ -23,7 +25,7 @@ import { HeaderComponent } from "../header/header.component";
     providers: [provideNativeDateAdapter(), EventService],
     templateUrl: './event.component.html',
     styleUrl: './event.component.scss',
-    imports: [FormsModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, HeaderComponent]
+    imports: [FormsModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, EventComponent,HeaderComponent,FooterComponent]
     
 })
 export class EventComponent {
@@ -87,7 +89,14 @@ export class EventComponent {
     
 
   }
-  
+  showModal(){
+    Swal.fire({
+      title: "Evento Agendado",
+      text: "Ahora puedes verlo en el home!",
+      icon: "success"
+    });
+    
+  }
   
   
   // Método para simular el inicio de sesión
